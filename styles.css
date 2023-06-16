@@ -1,13 +1,101 @@
-/*
-    header zone start
+.header__container {
+  box-shadow: 0px 2px 2px rgba(159, 159, 159, 0.208);
+}
+.header__container .menu__list {
+  width: 100%;
+}
+.header__container .menu__list .input__search {
+  width: 420px;
+}
+.header__container .menu__list .img__container--logo .img__logo {
+  height: 40px;
+  width: 40px;
+}
+.header__container .menu__list .box__user .search__container--icon {
+  border-radius: 10px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+.header__container .menu__list .box__user .search__container--icon:hover {
+  background-color: rgba(163, 148, 223, 0.3215686275);
+}
+.header__container .menu__list .box__user .avatar__circle {
+  border-radius: 100px;
+  padding: 3px;
+  cursor: pointer;
+}
+.header__container .menu__list .box__user .avatar__circle--container {
+  width: 32px;
+  height: 32px;
+}
+.header__container .menu__list .box__user .avatar__circle--container .img__avatar {
+  width: 100%;
+  border-radius: 100px;
+}
+.header__container .menu__list .box__user .avatar__circle:hover {
+  background-color: rgba(163, 148, 223, 0.3215686275);
+}
+.header__container .menu__list .box__user .box__notifications {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+.header__container .menu__list .box__user .box__notifications .counter__notification--number {
+  font-size: 15px;
+  background-color: red;
+  position: absolute;
+  right: 0px;
+  top: -5px;
+  border-radius: 7px;
+  color: white;
+  font-weight: bold;
+  border: 2px solid white;
+}
+.header__container .menu__list .box__user .box__notifications:hover {
+  background-color: rgba(163, 148, 223, 0.3215686275);
+  border-radius: 10px;
+}
 
-    header
-*/
-/*
-    container zone start
+.contenedor__main {
+  background-color: rgba(90, 90, 90, 0.139);
+}
 
-    container zone end
-*/
+.tags__menu {
+  font-size: 18px;
+}
+.tags__menu li:active {
+  font-weight: bolder;
+}
+
+.img__avatar {
+  width: 100%;
+  border-radius: 100px;
+  width: 32px;
+  height: 32px;
+}
+
+.nombre__usuario, .fecha__post {
+  font-size: 13px;
+}
+
+.post__readed {
+  font-size: 13px;
+}
+
+.icon__reaction {
+  position: relative;
+  left: -10px;
+}
+
+.comentario {
+  background-color: rgba(128, 128, 128, 0.157);
+}
+
+.comentario__username {
+  font-weight: bold;
+}
+
 /*
     container zone start
 
