@@ -19,3 +19,38 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+@import "vars.scss";
+
+
+.footer{
+    background-color: $footer-bg-color;
+    font-size: $footer-font-size;
+}
+
+li{
+    color: $li-color;
+}
+
+a{
+    color: $a-color;
+}
+
+p a:hover{
+    text-decoration-line: underline !important;
+    
+}
+
+
+
