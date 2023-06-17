@@ -1,17 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DevTo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <!-- header zone start  ***  Jesus Eng -->
-    <header>
-        
+    <header
+      class="d-flex justify-content-center align-items-center bg-grey text-black fs-3 px-2 header__container"
+    >
+      <nav
+        class="container-flow container-xl p-0 menu__list m-1 d-flex align-items-center justify-content-between bg-purple"
+      >
+        <div class="container__logo d-flex align-items-center gap-1">
+          <svg
+            class="d-md-none"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            role="img"
+            aria-labelledby="aef520gmqz3qke7fnlbiv7mco38mj1lf"
+            class="crayons-icon"
+          >
+            <title id="aef520gmqz3qke7fnlbiv7mco38mj1lf">Navigation menu</title>
+            <path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"></path>
+          </svg>
+          <a class="img__container--logo" href="/"
+            ><img
+              class="img__logo"
+              src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
+              alt=""
+              srcset=""
+          /></a>
+          <div
+            class="input__search d-none d-md-block d-flex justify-content-start"
+          >
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </div>
+        </div>
+        <div class="box__user d-flex align-items-center gap-1">
+          <div
+            class="search__container--icon d-md-none d-flex justify-content-center align-items-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              role="img"
+              aria-labelledby="agtkixkainaiofuhj4o3hunp3uvwl1y6"
+              class="crayons-icon"
+            >
+              <title id="agtkixkainaiofuhj4o3hunp3uvwl1y6">Search</title>
+              <path
+                d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0111 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 01-1.969 5.617zm-2.006-.742A6.977 6.977 0 0018 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 004.875-1.975l.15-.15z"
+              ></path>
+            </svg>
+          </div>
+          <div class="new__post d-none d-md-flex">
+            <button type="button" class="btn btn-outline-primary">
+              Create Post
+            </button>
+          </div>
+          <div
+            class="box__notifications d-flex align-items-center justify-content-center"
+          >
+            <div class="counter__notification">
+              <span class="counter__notification--number px-1">3</span>
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              role="img"
+              aria-labelledby="a4gcjtvbhvh6eh4ee8qmpi1l37goznso"
+              class="crayons-icon"
+            >
+              <title id="a4gcjtvbhvh6eh4ee8qmpi1l37goznso">Notifications</title>
+              <path
+                d="M20 17h2v2H2v-2h2v-7a8 8 0 1116 0v7zm-2 0v-7a6 6 0 10-12 0v7h12zm-9 4h6v2H9v-2z"
+              ></path>
+            </svg>
+          </div>
+          <div class="avatar__circle">
+            <div class="avatar__circle--container d-flex align-items-center">
+              <img
+                class="img__avatar"
+                alt=""
+                src="https://res.cloudinary.com/practicaldev/image/fetch/s--40Gyn8S9--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1100360/52db7e7f-94e7-4e8a-a773-afa2b3e3c113.jpeg"
+              />
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
     <!-- header zone end    ***  Jesus Eng  -->
 
@@ -21,249 +117,1402 @@
         <div class="row">
 
             <!-- aside left start -->
-
-            <div class="hamburger__content">
-              <header class="hamburger__content__header">
-                <h2 class="fs-l fw-bold flex-1 break-word lh-tight">DEV Community</h2>
-        
-                <button
-                  class="c-btn c-btn--icon-alone js-hamburger-trigger shrink-0"
-                  aria-label="Close"
-                >
-                  <img src="./assets/cancel.svg" alt="Shrink Option" />
-                </button>
-              </header>
-        
-              <div class="p-2 js-navigation-links-container">
-
             <aside class="d-none d-md-flex flex-column col-md-3 p-0">
-      <nav class="nav__bar_left">
-        <ul class="left__sidebar-links">
-          <li>
-            <a href="/" class="sidebar__nav-links">
-              <span class="icon__links">
-                <img src="./assets/home.svg" alt="A House" />
-              </span>
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="https://dev.to/listings" class="sidebar__nav-links">
-              <span class="icon__links">
-                <img src="./assets/listing.svg" alt="A list" />
-              </span>
-              Listings
-            </a>
-          </li>
-          <li>
-            <a href="" class="sidebar__nav-links">
-              <span class="icon__links">
-                <img src="./assets/podcast.svg" alt="A microphone" />
-              </span>
-              Podcasts
-            </a>
-          </li>
-          <li>
-            <a href="https://dev.to/videos" class="sidebar__nav-links">
-              <span class="icon__links">
-                <img src="./assets/video.svg" alt="A cinematographer" />
-              </span>
-              Videos
-            </a>
-          </li>
-          <li>
-            <a href="https://dev.to/tags" class="sidebar__nav-links">
-              <span class="icon__links">
-                <img src="./assets/tag.svg" alt="A tag" />
-              </span>
-              Tags
-            </a>
-          </li>
-          <li>
-            <a href="https://dev.to/faq" class="sidebar__nav-links">
-              <span class="icon__links">
-                <img src="./assets/question.svg" alt="A light bulb" />
-              </span>
-              FAQ
-            </a>
-          </li>
-          <li>
-            <a href="https://shop.forem.com/" class="sidebar__nav-links">
-              <span class="icon__links">
-                <img src="./assets/shop.svg" alt="A couple of shop bags" />
-              </span>
-              Forem Shop
-            </a>
-          </li>
-          <li>
-            <a href="" class="sidebar__nav-links">
-              <span class="icon__links">
-                <img src="./assets/sponsor.svg" alt="A heart" />
-              </span>
-              Sponsors
-            </a>
-          </li>
-          <li>
-            <a href="https://dev.to/about" class="sidebar__nav-links">
-              <span class="icon__links">
-                <img src="./assets/about.svg" alt="DEV web Logotype" />
-              </span>
-              About
-            </a>
-          </li>
-          <li>
-            <a href="https://dev.to/contact" class="sidebar__nav-links">
-              <span class="icon__links">
-                <img src="./assets/contact.svg" alt="A trumpet" />
-              </span>
-              Contact
-            </a>
-          </li>
-          <li>
-            <a href="https://dev.to/guides" class="sidebar__nav-links">
-              <span class="icon__links">
-                <img src="./assets/guides.svg" alt="A book" />
-              </span>
-              Guides
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://dev.to/software-comparisons"
-              class="sidebar__nav-links"
-            >
-              <span class="icon__links">
-                <img src="./assets/software.svg" alt="A doubtful face" />
-              </span>
-              Software comparisons
-            </a>
-          </li>
-        </ul>
-      </nav>
-
-      <nav class="mid__point-header">
-        <h2 class="mid__point-header--H">Other</h2>
-        <ul class="other-navigation-links">
-          <li>
-            <a
-              href="https://dev.to/code-of-conduct"
-              class="sidebar__navigation-link"
-            >
-              <span class="icon__links">
-                <img src="./assets/conduct.svg" alt="A thumb" />
-              </span>
-              Code of Conduct
-            </a>
-          </li>
-          <li>
-            <a href="https://dev.to/privacy" class="sidebar__navigation-link">
-              <span class="icon__links">
-                <img src="./assets/policy.svg" alt="A nerdy face" />
-              </span>
-              Privacy Policy
-            </a>
-          </li>
-          <li>
-            <a href="https://dev.to/terms" class="sidebar__navigation-link">
-              <span class="icon__links">
-                <img src="./assets/terms.svg" alt="A looking eyes" />
-              </span>
-              Terms of use
-            </a>
-          </li>
-        </ul>
-      </nav>
-
-      <div
-        class="brand__icons"
-      >
-        <a
-          href="https://twitter.com/thepracticaldev"
-          target="_blank"
-          class="c-link c-link--icon-alone c-link--block"
-          rel="noopener me"
-        >
-          <img src="./assets/twitter.svg" alt="A blue bird logotype" />
-        </a>
-        <a
-          href="https://facebook.com/thepracticaldev"
-          target="_blank"
-          class="c-link c-link--icon-alone c-link--block"
-          rel="noopener me"
-        >
-          <img src="./assets/facebook.svg" alt="Facebook Logotype" />
-        </a>
-        <a
-          href="https://github.com/forem"
-          target="_blank"
-          class="c-link c-link--icon-alone c-link--block"
-          rel="noopener me"
-        >
-          <img src="./assets/github.svg" alt="A cat logotype" />
-        </a>
-        <a
-          href="https://instagram.com/thepracticaldev"
-          target="_blank"
-          class="c-link c-link--icon-alone c-link--block"
-          rel="noopener me"
-        >
-          <img src="./assets/instagram.svg" alt="The Instagram Logotype" />
-        </a>
-        <a
-          href="https://twitch.com/thepracticaldev"
-          target="_blank"
-          class="c-link c-link--icon-alone c-link--block"
-          rel="noopener me"
-        >
-          <img src="./assets/twitch.svg" alt="The Twitch Logotype" />
-        </a>
-        <a
-          href="https://fosstodon.org/@thepracticaldev"
-          target="_blank"
-          class="c-link c-link--icon-alone c-link--block"
-          rel="noopener me"
-        >
-          <img src="./assets/mastodon.svg" alt="The Mastodon Logotype" />
-        </a>
-      </div>
-    </aside>
-
-  <!-- </div>
-</div>
-</div> -->
-  
-
-
-  
-            <!-- aside right start -->
-
-            <!-- main start -->
-            <main class="col-12 col-md-9 col-lg-6">
-                <a href="./post.html">pagina post</a>
-            </main>
-            <!-- main end -->
-
-            <!-- aside right start -->
-            <aside class="col-3">
-                aside right
+              <nav class="nav__bar_left">
+                <ul class="left__sidebar-links">
+                  <li>
+                    <a href="/" class="sidebar__nav-links">
+                      <span class="icon__links">
+                        <img src="./assets/home.svg" alt="A House" />
+                      </span>
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://dev.to/listings" class="sidebar__nav-links">
+                      <span class="icon__links">
+                        <img src="./assets/listing.svg" alt="A list" />
+                      </span>
+                      Listings
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="sidebar__nav-links">
+                      <span class="icon__links">
+                        <img src="./assets/podcast.svg" alt="A microphone" />
+                      </span>
+                      Podcasts
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://dev.to/videos" class="sidebar__nav-links">
+                      <span class="icon__links">
+                        <img src="./assets/video.svg" alt="A cinematographer" />
+                      </span>
+                      Videos
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://dev.to/tags" class="sidebar__nav-links">
+                      <span class="icon__links">
+                        <img src="./assets/tag.svg" alt="A tag" />
+                      </span>
+                      Tags
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://dev.to/faq" class="sidebar__nav-links">
+                      <span class="icon__links">
+                        <img src="./assets/question.svg" alt="A light bulb" />
+                      </span>
+                      FAQ
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://shop.forem.com/" class="sidebar__nav-links">
+                      <span class="icon__links">
+                        <img src="./assets/shop.svg" alt="A couple of shop bags" />
+                      </span>
+                      Forem Shop
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="sidebar__nav-links">
+                      <span class="icon__links">
+                        <img src="./assets/sponsor.svg" alt="A heart" />
+                      </span>
+                      Sponsors
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://dev.to/about" class="sidebar__nav-links">
+                      <span class="icon__links">
+                        <img src="./assets/about.svg" alt="DEV web Logotype" />
+                      </span>
+                      About
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://dev.to/contact" class="sidebar__nav-links">
+                      <span class="icon__links">
+                        <img src="./assets/contact.svg" alt="A trumpet" />
+                      </span>
+                      Contact
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://dev.to/guides" class="sidebar__nav-links">
+                      <span class="icon__links">
+                        <img src="./assets/guides.svg" alt="A book" />
+                      </span>
+                      Guides
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://dev.to/software-comparisons"
+                      class="sidebar__nav-links"
+                    >
+                      <span class="icon__links">
+                        <img src="./assets/software.svg" alt="A doubtful face" />
+                      </span>
+                      Software comparisons
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+        
+              <nav class="mid__point-header">
+                <h2 class="mid__point-header--H">Other</h2>
+                <ul class="other-navigation-links">
+                  <li>
+                    <a
+                      href="https://dev.to/code-of-conduct"
+                      class="sidebar__navigation-link"
+                    >
+                      <span class="icon__links">
+                        <img src="./assets/conduct.svg" alt="A thumb" />
+                      </span>
+                      Code of Conduct
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://dev.to/privacy" class="sidebar__navigation-link">
+                      <span class="icon__links">
+                        <img src="./assets/policy.svg" alt="A nerdy face" />
+                      </span>
+                      Privacy Policy
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://dev.to/terms" class="sidebar__navigation-link">
+                      <span class="icon__links">
+                        <img src="./assets/terms.svg" alt="A looking eyes" />
+                      </span>
+                      Terms of use
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+        
+              <div
+                class="brand__icons"
+              >
+                <a
+                  href="https://twitter.com/thepracticaldev"
+                  target="_blank"
+                  class="c-link c-link--icon-alone c-link--block"
+                  rel="noopener me"
+                >
+                  <img src="./assets/twitter.svg" alt="A blue bird logotype" />
+                </a>
+                <a
+                  href="https://facebook.com/thepracticaldev"
+                  target="_blank"
+                  class="c-link c-link--icon-alone c-link--block"
+                  rel="noopener me"
+                >
+                  <img src="./assets/facebook.svg" alt="Facebook Logotype" />
+                </a>
+                <a
+                  href="https://github.com/forem"
+                  target="_blank"
+                  class="c-link c-link--icon-alone c-link--block"
+                  rel="noopener me"
+                >
+                  <img src="./assets/github.svg" alt="A cat logotype" />
+                </a>
+                <a
+                  href="https://instagram.com/thepracticaldev"
+                  target="_blank"
+                  class="c-link c-link--icon-alone c-link--block"
+                  rel="noopener me"
+                >
+                  <img src="./assets/instagram.svg" alt="The Instagram Logotype" />
+                </a>
+                <a
+                  href="https://twitch.com/thepracticaldev"
+                  target="_blank"
+                  class="c-link c-link--icon-alone c-link--block"
+                  rel="noopener me"
+                >
+                  <img src="./assets/twitch.svg" alt="The Twitch Logotype" />
+                </a>
+                <a
+                  href="https://fosstodon.org/@thepracticaldev"
+                  target="_blank"
+                  class="c-link c-link--icon-alone c-link--block"
+                  rel="noopener me"
+                >
+                  <img src="./assets/mastodon.svg" alt="The Mastodon Logotype" />
+                </a>
+              </div>
             </aside>
-            <!-- aside right end -->
+            <!-- aside right start -->
 
-        </div>
+        <!-- main start -->
+        <main
+          class="p-0 col-12 col-md-9 col-lg-6 d-flex align-items-start flex-column "
+        >
+          <ul
+            class="tags__menu d-flex align-items-center m-0 p-3 list-unstyled gap-4"
+          >
+            <li class="fw-bold">Relevant</li>
+            <li>Latest</li>
+            <li>Top</li>
+          </ul>
+          <section class="d-flex post__section flex-column">
+            <div class="card mb-3">
+              <img
+                src="https://res.cloudinary.com/practicaldev/image/fetch/s--nsXrRyNv--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/8ig4m4u8uv3n11xorfiv.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card__description p-3">
+                <div class="d-flex gap-1">
+                  <dic class="img__container d-flex align-items-center">
+                    <img
+                      class="img__avatar"
+                      src="https://res.cloudinary.com/practicaldev/image/fetch/s--p4Mzv5iQ--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1089413/1fde6e2d-4196-42d9-9f8d-3cf429dbe491.jpeg"
+                      alt=""
+                      srcset=""
+                    />
+                  </dic>
+                  <dic class="d-flex flex-column m-0 p-0 w-full ">
+                    <p class="m-0 nombre__usuario">Anrew Bone</p>
+                    <p class="m-0 fecha__post">Jun 13 (1 day ago)</p>
+                  </dic>
+                </div>
+                <div class="card-body p-0 mt-3">
+                  <a class="text-decoration-none text-black" href="./post.html"
+                    ><h2 class="card-title">
+                      Catch DEV Co-Founder Ben Halpern’s Keynote at RubyConf TH
+                      2023
+                    </h2></a
+                  >
+                </div>
+                <div>
+                  <span class="mx-0">#meta</span>
+                  <span class="mx-2">#ruby</span>
+                  <span class="mx-2">#conference</span>
+                </div>
+                <div class="row">
+                  <div class="col-8 col-sm-9 my-2 fs-6">
+                    <div class="row">
+                      <div class="col-8">
+                        <div class="reactions__buttons d-flex">
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg"
+                              alt=""
+                            />
+                          </div>
+                          <span class="d-none d-sm-flex ">26 Reactions</span>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <svg
+                          class="crayons-icon"
+                          width="24"
+                          height="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"
+                          ></path>
+                        </svg>
+                        <span class="">3 </span
+                        ><span class="d-none d-sm-inline-block">comments</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-4 col-sm-3 d-flex align-items-center post__readed"
+                  >
+                    <div class="d-flex">
+                      <span>1 min read</span>
+                      <svg
+                        class="crayons-icon c-btn__icon"
+                        aria-hidden="true"
+                        focusable="false"
+                        width="24"
+                        height="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.75 4.5h10.5a.75.75 0 0 1 .75.75v14.357a.375.375 0 0 1-.575.318L12 16.523l-5.426 3.401A.375.375 0 0 1 6 19.607V5.25a.75.75 0 0 1 .75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex gap-2 mt-3">
+                  <div class="">
+                    <div>
+                      <img
+                        class="img__avatar"
+                        src="https://res.cloudinary.com/practicaldev/image/fetch/s--AwVVkEoU--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/245175/43d9e040-6762-4abe-bfb3-c7a1f91ac0a1.jpeg"
+                        class="crayons-avatar__image"
+                        alt="{comment.username} avatar"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-11 comentario p-3 rounded">
+                    <div>
+                      <span class="comentario__username"
+                        >Nisar Hassan Naqvi</span
+                      >
+                      <span>2 days ago</span>
+                    </div>
+                    <p>Great template pretty slick and rad design ✨</p>
+                  </div>
+                </div>
+                <div class="d-flex gap-2 mt-3">
+                  <div class="">
+                    <div>
+                      <img
+                        class="img__avatar"
+                        src="https://res.cloudinary.com/practicaldev/image/fetch/s--AwVVkEoU--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/245175/43d9e040-6762-4abe-bfb3-c7a1f91ac0a1.jpeg"
+                        class="crayons-avatar__image"
+                        alt="{comment.username} avatar"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-11 comentario p-3 rounded">
+                    <div>
+                      <span class="comentario__username"
+                        >Nisar Hassan Naqvi</span
+                      >
+                      <span>2 days ago</span>
+                    </div>
+                    <p>Great template pretty slick and rad design ✨</p>
+                  </div>
+                </div>
+                <div class="d-flex gap-2 mt-3">
+                  <div class="">
+                    <div>
+                      <img
+                        class="img__avatar"
+                        src="https://res.cloudinary.com/practicaldev/image/fetch/s--AwVVkEoU--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/245175/43d9e040-6762-4abe-bfb3-c7a1f91ac0a1.jpeg"
+                        class="crayons-avatar__image"
+                        alt="{comment.username} avatar"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-11 comentario p-3 rounded">
+                    <div>
+                      <span class="comentario__username"
+                        >Nisar Hassan Naqvi</span
+                      >
+                      <span>2 days ago</span>
+                    </div>
+                    <p>Great template pretty slick and rad design ✨</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="card__description p-3">
+                <div class="d-flex gap-1">
+                  <dic class="img__container d-flex align-items-center">
+                    <img
+                      class="img__avatar"
+                      src="https://res.cloudinary.com/practicaldev/image/fetch/s--p4Mzv5iQ--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1089413/1fde6e2d-4196-42d9-9f8d-3cf429dbe491.jpeg"
+                      alt=""
+                      srcset=""
+                    />
+                  </dic>
+                  <dic class="d-flex flex-column m-0 p-0 w-full ">
+                    <p class="m-0 nombre__usuario">Anrew Bone</p>
+                    <p class="m-0 fecha__post">Jun 13 (1 day ago)</p>
+                  </dic>
+                </div>
+                <div class="card-body p-0 mt-3">
+                  <a class="text-decoration-none text-black" href="./post.html"
+                    ><h2 class="card-title">
+                      Catch DEV Co-Founder Ben Halpern’s Keynote at RubyConf TH
+                      2023
+                    </h2></a
+                  >
+                </div>
+                <div>
+                  <span class="mx-0">#meta</span>
+                  <span class="mx-2">#ruby</span>
+                  <span class="mx-2">#conference</span>
+                </div>
+                <div class="row">
+                  <div class="col-8 col-sm-9 my-2 fs-6">
+                    <div class="row">
+                      <div class="col-8">
+                        <div class="reactions__buttons d-flex">
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg"
+                              alt=""
+                            />
+                          </div>
+                          <span class="d-none d-sm-flex ">26 Reactions</span>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <svg
+                          class="crayons-icon"
+                          width="24"
+                          height="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"
+                          ></path>
+                        </svg>
+                        <span class="">3 </span
+                        ><span class="d-none d-sm-inline-block">comments</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-4 col-sm-3 d-flex align-items-center post__readed"
+                  >
+                    <div class="d-flex">
+                      <span>1 min read</span>
+                      <svg
+                        class="crayons-icon c-btn__icon"
+                        aria-hidden="true"
+                        focusable="false"
+                        width="24"
+                        height="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.75 4.5h10.5a.75.75 0 0 1 .75.75v14.357a.375.375 0 0 1-.575.318L12 16.523l-5.426 3.401A.375.375 0 0 1 6 19.607V5.25a.75.75 0 0 1 .75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex gap-2 mt-3">
+                  <div class="">
+                    <div>
+                      <img
+                        class="img__avatar"
+                        src="https://res.cloudinary.com/practicaldev/image/fetch/s--AwVVkEoU--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/245175/43d9e040-6762-4abe-bfb3-c7a1f91ac0a1.jpeg"
+                        class="crayons-avatar__image"
+                        alt="{comment.username} avatar"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-11 comentario p-3 rounded">
+                    <div>
+                      <span class="comentario__username"
+                        >Nisar Hassan Naqvi</span
+                      >
+                      <span>2 days ago</span>
+                    </div>
+                    <p>Great template pretty slick and rad design ✨</p>
+                  </div>
+                </div>
+                <div class="d-flex gap-2 mt-3">
+                  <div class="">
+                    <div>
+                      <img
+                        class="img__avatar"
+                        src="https://res.cloudinary.com/practicaldev/image/fetch/s--AwVVkEoU--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/245175/43d9e040-6762-4abe-bfb3-c7a1f91ac0a1.jpeg"
+                        class="crayons-avatar__image"
+                        alt="{comment.username} avatar"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-11 comentario p-3 rounded">
+                    <div>
+                      <span class="comentario__username"
+                        >Nisar Hassan Naqvi</span
+                      >
+                      <span>2 days ago</span>
+                    </div>
+                    <p>Great template pretty slick and rad design ✨</p>
+                  </div>
+                </div>
+                <div class="d-flex gap-2 mt-3">
+                  <div class="">
+                    <div>
+                      <img
+                        class="img__avatar"
+                        src="https://res.cloudinary.com/practicaldev/image/fetch/s--AwVVkEoU--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/245175/43d9e040-6762-4abe-bfb3-c7a1f91ac0a1.jpeg"
+                        class="crayons-avatar__image"
+                        alt="{comment.username} avatar"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-11 comentario p-3 rounded">
+                    <div>
+                      <span class="comentario__username"
+                        >Nisar Hassan Naqvi</span
+                      >
+                      <span>2 days ago</span>
+                    </div>
+                    <p>Great template pretty slick and rad design ✨</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="card__description p-3">
+                <div class="d-flex gap-1">
+                  <dic class="img__container d-flex align-items-center">
+                    <img
+                      class="img__avatar"
+                      src="https://res.cloudinary.com/practicaldev/image/fetch/s--p4Mzv5iQ--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1089413/1fde6e2d-4196-42d9-9f8d-3cf429dbe491.jpeg"
+                      alt=""
+                      srcset=""
+                    />
+                  </dic>
+                  <dic class="d-flex flex-column m-0 p-0 w-full ">
+                    <p class="m-0 nombre__usuario">Anrew Bone</p>
+                    <p class="m-0 fecha__post">Jun 13 (1 day ago)</p>
+                  </dic>
+                </div>
+                <div class="card-body p-0 mt-3">
+                  <a class="text-decoration-none text-black" href="./post.html"
+                    ><h2 class="card-title">
+                      Catch DEV Co-Founder Ben Halpern’s Keynote at RubyConf TH
+                      2023
+                    </h2></a
+                  >
+                </div>
+                <div>
+                  <span class="mx-0">#meta</span>
+                  <span class="mx-2">#ruby</span>
+                  <span class="mx-2">#conference</span>
+                </div>
+                <div class="row">
+                  <div class="col-8 col-sm-9 my-2 fs-6">
+                    <div class="row">
+                      <div class="col-8">
+                        <div class="reactions__buttons d-flex">
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg"
+                              alt=""
+                            />
+                          </div>
+                          <span class="d-none d-sm-flex ">26 Reactions</span>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <svg
+                          class="crayons-icon"
+                          width="24"
+                          height="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"
+                          ></path>
+                        </svg>
+                        <span class="">3 </span
+                        ><span class="d-none d-sm-inline-block">comments</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-4 col-sm-3 d-flex align-items-center post__readed"
+                  >
+                    <div class="d-flex">
+                      <span>1 min read</span>
+                      <svg
+                        class="crayons-icon c-btn__icon"
+                        aria-hidden="true"
+                        focusable="false"
+                        width="24"
+                        height="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.75 4.5h10.5a.75.75 0 0 1 .75.75v14.357a.375.375 0 0 1-.575.318L12 16.523l-5.426 3.401A.375.375 0 0 1 6 19.607V5.25a.75.75 0 0 1 .75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="card__description p-3">
+                <div class="d-flex gap-1">
+                  <dic class="img__container d-flex align-items-center">
+                    <img
+                      class="img__avatar"
+                      src="https://res.cloudinary.com/practicaldev/image/fetch/s--p4Mzv5iQ--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1089413/1fde6e2d-4196-42d9-9f8d-3cf429dbe491.jpeg"
+                      alt=""
+                      srcset=""
+                    />
+                  </dic>
+                  <dic class="d-flex flex-column m-0 p-0 w-full ">
+                    <p class="m-0 nombre__usuario">Anrew Bone</p>
+                    <p class="m-0 fecha__post">Jun 13 (1 day ago)</p>
+                  </dic>
+                </div>
+                <div class="card-body p-0 mt-3">
+                  <a class="text-decoration-none text-black" href="./post.html"
+                    ><h2 class="card-title">
+                      Catch DEV Co-Founder Ben Halpern’s Keynote at RubyConf TH
+                      2023
+                    </h2></a
+                  >
+                </div>
+                <div>
+                  <span class="mx-0">#meta</span>
+                  <span class="mx-2">#ruby</span>
+                  <span class="mx-2">#conference</span>
+                </div>
+                <div class="row">
+                  <div class="col-8 col-sm-9 my-2 fs-6">
+                    <div class="row">
+                      <div class="col-8">
+                        <div class="reactions__buttons d-flex">
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg"
+                              alt=""
+                            />
+                          </div>
+                          <span class="d-none d-sm-flex ">26 Reactions</span>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <svg
+                          class="crayons-icon"
+                          width="24"
+                          height="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"
+                          ></path>
+                        </svg>
+                        <span class="">3 </span
+                        ><span class="d-none d-sm-inline-block">comments</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-4 col-sm-3 d-flex align-items-center post__readed"
+                  >
+                    <div class="d-flex">
+                      <span>1 min read</span>
+                      <svg
+                        class="crayons-icon c-btn__icon"
+                        aria-hidden="true"
+                        focusable="false"
+                        width="24"
+                        height="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.75 4.5h10.5a.75.75 0 0 1 .75.75v14.357a.375.375 0 0 1-.575.318L12 16.523l-5.426 3.401A.375.375 0 0 1 6 19.607V5.25a.75.75 0 0 1 .75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="card__description p-3">
+                <div class="d-flex gap-1">
+                  <dic class="img__container d-flex align-items-center">
+                    <img
+                      class="img__avatar"
+                      src="https://res.cloudinary.com/practicaldev/image/fetch/s--p4Mzv5iQ--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1089413/1fde6e2d-4196-42d9-9f8d-3cf429dbe491.jpeg"
+                      alt=""
+                      srcset=""
+                    />
+                  </dic>
+                  <dic class="d-flex flex-column m-0 p-0 w-full ">
+                    <p class="m-0 nombre__usuario">Anrew Bone</p>
+                    <p class="m-0 fecha__post">Jun 13 (1 day ago)</p>
+                  </dic>
+                </div>
+                <div class="card-body p-0 mt-3">
+                  <a class="text-decoration-none text-black" href="./post.html"
+                    ><h2 class="card-title">
+                      Catch DEV Co-Founder Ben Halpern’s Keynote at RubyConf TH
+                      2023
+                    </h2></a
+                  >
+                </div>
+                <div>
+                  <span class="mx-0">#meta</span>
+                  <span class="mx-2">#ruby</span>
+                  <span class="mx-2">#conference</span>
+                </div>
+                <div class="row">
+                  <div class="col-8 col-sm-9 my-2 fs-6">
+                    <div class="row">
+                      <div class="col-8">
+                        <div class="reactions__buttons d-flex">
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg"
+                              alt=""
+                            />
+                          </div>
+                          <span class="d-none d-sm-flex ">26 Reactions</span>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <svg
+                          class="crayons-icon"
+                          width="24"
+                          height="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"
+                          ></path>
+                        </svg>
+                        <span class="">3 </span
+                        ><span class="d-none d-sm-inline-block">comments</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-4 col-sm-3 d-flex align-items-center post__readed"
+                  >
+                    <div class="d-flex">
+                      <span>1 min read</span>
+                      <svg
+                        class="crayons-icon c-btn__icon"
+                        aria-hidden="true"
+                        focusable="false"
+                        width="24"
+                        height="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.75 4.5h10.5a.75.75 0 0 1 .75.75v14.357a.375.375 0 0 1-.575.318L12 16.523l-5.426 3.401A.375.375 0 0 1 6 19.607V5.25a.75.75 0 0 1 .75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="card__description p-3">
+                <div class="d-flex gap-1">
+                  <dic class="img__container d-flex align-items-center">
+                    <img
+                      class="img__avatar"
+                      src="https://res.cloudinary.com/practicaldev/image/fetch/s--p4Mzv5iQ--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1089413/1fde6e2d-4196-42d9-9f8d-3cf429dbe491.jpeg"
+                      alt=""
+                      srcset=""
+                    />
+                  </dic>
+                  <dic class="d-flex flex-column m-0 p-0 w-full ">
+                    <p class="m-0 nombre__usuario">Anrew Bone</p>
+                    <p class="m-0 fecha__post">Jun 13 (1 day ago)</p>
+                  </dic>
+                </div>
+                <div class="card-body p-0 mt-3">
+                  <h2 class="card-title">
+                    Catch DEV Co-Founder Ben Halpern’s Keynote at RubyConf TH
+                    2023
+                  </h2>
+                </div>
+                <div>
+                  <span class="mx-0">#meta</span>
+                  <span class="mx-2">#ruby</span>
+                  <span class="mx-2">#conference</span>
+                </div>
+                <div class="row">
+                  <div class="col-8 col-sm-9 my-2 fs-6">
+                    <div class="row">
+                      <div class="col-8">
+                        <div class="reactions__buttons d-flex">
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg"
+                              alt=""
+                            />
+                          </div>
+                          <span class="d-none d-sm-flex ">26 Reactions</span>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <svg
+                          class="crayons-icon"
+                          width="24"
+                          height="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"
+                          ></path>
+                        </svg>
+                        <span class="">3 </span
+                        ><span class="d-none d-sm-inline-block">comments</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-4 col-sm-3 d-flex align-items-center post__readed"
+                  >
+                    <div class="d-flex">
+                      <span>1 min read</span>
+                      <svg
+                        class="crayons-icon c-btn__icon"
+                        aria-hidden="true"
+                        focusable="false"
+                        width="24"
+                        height="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.75 4.5h10.5a.75.75 0 0 1 .75.75v14.357a.375.375 0 0 1-.575.318L12 16.523l-5.426 3.401A.375.375 0 0 1 6 19.607V5.25a.75.75 0 0 1 .75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="card__description p-3">
+                <div class="d-flex gap-1">
+                  <dic class="img__container d-flex align-items-center">
+                    <img
+                      class="img__avatar"
+                      src="https://res.cloudinary.com/practicaldev/image/fetch/s--p4Mzv5iQ--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1089413/1fde6e2d-4196-42d9-9f8d-3cf429dbe491.jpeg"
+                      alt=""
+                      srcset=""
+                    />
+                  </dic>
+                  <dic class="d-flex flex-column m-0 p-0 w-full ">
+                    <p class="m-0 nombre__usuario">Anrew Bone</p>
+                    <p class="m-0 fecha__post">Jun 13 (1 day ago)</p>
+                  </dic>
+                </div>
+                <div class="card-body p-0 mt-3">
+                  <h2 class="card-title">
+                    Catch DEV Co-Founder Ben Halpern’s Keynote at RubyConf TH
+                    2023
+                  </h2>
+                </div>
+                <div>
+                  <span class="mx-0">#meta</span>
+                  <span class="mx-2">#ruby</span>
+                  <span class="mx-2">#conference</span>
+                </div>
+                <div class="row">
+                  <div class="col-8 col-sm-9 my-2 fs-6">
+                    <div class="row">
+                      <div class="col-8">
+                        <div class="reactions__buttons d-flex">
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg"
+                              alt=""
+                            />
+                          </div>
+                          <span class="d-none d-sm-flex ">26 Reactions</span>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <svg
+                          class="crayons-icon"
+                          width="24"
+                          height="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"
+                          ></path>
+                        </svg>
+                        <span class="">3 </span
+                        ><span class="d-none d-sm-inline-block">comments</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-4 col-sm-3 d-flex align-items-center post__readed"
+                  >
+                    <div class="d-flex">
+                      <span>1 min read</span>
+                      <svg
+                        class="crayons-icon c-btn__icon"
+                        aria-hidden="true"
+                        focusable="false"
+                        width="24"
+                        height="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.75 4.5h10.5a.75.75 0 0 1 .75.75v14.357a.375.375 0 0 1-.575.318L12 16.523l-5.426 3.401A.375.375 0 0 1 6 19.607V5.25a.75.75 0 0 1 .75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="card__description p-3">
+                <div class="d-flex gap-1">
+                  <dic class="img__container d-flex align-items-center">
+                    <img
+                      class="img__avatar"
+                      src="https://res.cloudinary.com/practicaldev/image/fetch/s--p4Mzv5iQ--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1089413/1fde6e2d-4196-42d9-9f8d-3cf429dbe491.jpeg"
+                      alt=""
+                      srcset=""
+                    />
+                  </dic>
+                  <dic class="d-flex flex-column m-0 p-0 w-full ">
+                    <p class="m-0 nombre__usuario">Anrew Bone</p>
+                    <p class="m-0 fecha__post">Jun 13 (1 day ago)</p>
+                  </dic>
+                </div>
+                <div class="card-body p-0 mt-3">
+                  <h2 class="card-title">
+                    Catch DEV Co-Founder Ben Halpern’s Keynote at RubyConf TH
+                    2023
+                  </h2>
+                </div>
+                <div>
+                  <span class="mx-0">#meta</span>
+                  <span class="mx-2">#ruby</span>
+                  <span class="mx-2">#conference</span>
+                </div>
+                <div class="row">
+                  <div class="col-8 col-sm-9 my-2 fs-6">
+                    <div class="row">
+                      <div class="col-8">
+                        <div class="reactions__buttons d-flex">
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg"
+                              alt=""
+                            />
+                          </div>
+                          <span class="d-none d-sm-flex ">26 Reactions</span>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <svg
+                          class="crayons-icon"
+                          width="24"
+                          height="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"
+                          ></path>
+                        </svg>
+                        <span class="">3 </span
+                        ><span class="d-none d-sm-inline-block">comments</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-4 col-sm-3 d-flex align-items-center post__readed"
+                  >
+                    <div class="d-flex">
+                      <span>1 min read</span>
+                      <svg
+                        class="crayons-icon c-btn__icon"
+                        aria-hidden="true"
+                        focusable="false"
+                        width="24"
+                        height="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.75 4.5h10.5a.75.75 0 0 1 .75.75v14.357a.375.375 0 0 1-.575.318L12 16.523l-5.426 3.401A.375.375 0 0 1 6 19.607V5.25a.75.75 0 0 1 .75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="card__description p-3">
+                <div class="d-flex gap-1">
+                  <dic class="img__container d-flex align-items-center">
+                    <img
+                      class="img__avatar"
+                      src="https://res.cloudinary.com/practicaldev/image/fetch/s--p4Mzv5iQ--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1089413/1fde6e2d-4196-42d9-9f8d-3cf429dbe491.jpeg"
+                      alt=""
+                      srcset=""
+                    />
+                  </dic>
+                  <dic class="d-flex flex-column m-0 p-0 w-full ">
+                    <p class="m-0 nombre__usuario">Anrew Bone</p>
+                    <p class="m-0 fecha__post">Jun 13 (1 day ago)</p>
+                  </dic>
+                </div>
+                <div class="card-body p-0 mt-3">
+                  <h2 class="card-title">
+                    Catch DEV Co-Founder Ben Halpern’s Keynote at RubyConf TH
+                    2023
+                  </h2>
+                </div>
+                <div>
+                  <span class="mx-0">#meta</span>
+                  <span class="mx-2">#ruby</span>
+                  <span class="mx-2">#conference</span>
+                </div>
+                <div class="row">
+                  <div class="col-8 col-sm-9 my-2 fs-6">
+                    <div class="row">
+                      <div class="col-8">
+                        <div class="reactions__buttons d-flex">
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg"
+                              alt=""
+                            />
+                          </div>
+                          <span class="d-none d-sm-flex ">26 Reactions</span>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <svg
+                          class="crayons-icon"
+                          width="24"
+                          height="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"
+                          ></path>
+                        </svg>
+                        <span class="">3 </span
+                        ><span class="d-none d-sm-inline-block">comments</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-4 col-sm-3 d-flex align-items-center post__readed"
+                  >
+                    <div class="d-flex">
+                      <span>1 min read</span>
+                      <svg
+                        class="crayons-icon c-btn__icon"
+                        aria-hidden="true"
+                        focusable="false"
+                        width="24"
+                        height="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.75 4.5h10.5a.75.75 0 0 1 .75.75v14.357a.375.375 0 0 1-.575.318L12 16.523l-5.426 3.401A.375.375 0 0 1 6 19.607V5.25a.75.75 0 0 1 .75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="card__description p-3">
+                <div class="d-flex gap-1">
+                  <dic class="img__container d-flex align-items-center">
+                    <img
+                      class="img__avatar"
+                      src="https://res.cloudinary.com/practicaldev/image/fetch/s--p4Mzv5iQ--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1089413/1fde6e2d-4196-42d9-9f8d-3cf429dbe491.jpeg"
+                      alt=""
+                      srcset=""
+                    />
+                  </dic>
+                  <dic class="d-flex flex-column m-0 p-0 w-full ">
+                    <p class="m-0 nombre__usuario">Anrew Bone</p>
+                    <p class="m-0 fecha__post">Jun 13 (1 day ago)</p>
+                  </dic>
+                </div>
+                <div class="card-body p-0 mt-3">
+                  <h2 class="card-title">
+                    Catch DEV Co-Founder Ben Halpern’s Keynote at RubyConf TH
+                    2023
+                  </h2>
+                </div>
+                <div>
+                  <span class="mx-0">#meta</span>
+                  <span class="mx-2">#ruby</span>
+                  <span class="mx-2">#conference</span>
+                </div>
+                <div class="row">
+                  <div class="col-8 col-sm-9 my-2 fs-6">
+                    <div class="row">
+                      <div class="col-8">
+                        <div class="reactions__buttons d-flex">
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="icon__reaction d-inline-block">
+                            <img
+                              src="https://dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg"
+                              alt=""
+                            />
+                          </div>
+                          <span class="d-none d-sm-flex ">26 Reactions</span>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <svg
+                          class="crayons-icon"
+                          width="24"
+                          height="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z"
+                          ></path>
+                        </svg>
+                        <span class="">3 </span
+                        ><span class="d-none d-sm-inline-block">comments</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-4 col-sm-3 d-flex align-items-center post__readed"
+                  >
+                    <div class="d-flex">
+                      <span>1 min read</span>
+                      <svg
+                        class="crayons-icon c-btn__icon"
+                        aria-hidden="true"
+                        focusable="false"
+                        width="24"
+                        height="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.75 4.5h10.5a.75.75 0 0 1 .75.75v14.357a.375.375 0 0 1-.575.318L12 16.523l-5.426 3.401A.375.375 0 0 1 6 19.607V5.25a.75.75 0 0 1 .75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+        <!-- main end -->
 
-
+        <!-- aside right start -->
+        <aside class="col-3">aside right</aside>
+        <!-- aside right end -->
+      </div>
     </div>
     <!-- container zone end -->
 
     <!-- footer zone start -->
-    <footer>
-
-    </footer>
+    <footer></footer>
     <!-- footer zone end -->
 
-
-
     <!-- script para que funcione bootsrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
