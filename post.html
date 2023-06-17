@@ -1,35 +1,885 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevTo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="post.css">
 </head>
+
 <body>
 
-    <!-- header zone start -->
-    <header>
-
+    <!-- header zone start  *  Jesus Eng -->
+    <header
+        class="d-flex sticky-top  bg-white justify-content-center align-items-center bg-grey text-black fs-3 px-2 header__container">
+        <nav
+            class="container-flow container-xl p-0 menu__list m-1 d-flex align-items-center justify-content-between bg-purple">
+            <div class="container__logo d-flex align-items-center gap-1">
+                <svg class="d-md-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    role="img" aria-labelledby="aef520gmqz3qke7fnlbiv7mco38mj1lf" class="crayons-icon">
+                    <title id="aef520gmqz3qke7fnlbiv7mco38mj1lf">Navigation menu</title>
+                    <path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"></path>
+                </svg>
+                <a class="img__container--logo" href="/"><img class="img__logo"
+                        src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
+                        alt="" srcset="" /></a>
+                <div class="input__search d-none d-md-block d-flex justify-content-start">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                </div>
+            </div>
+            <div class="box__user d-flex align-items-center gap-1">
+                <div class="search__container--icon d-md-none d-flex justify-content-center align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
+                        aria-labelledby="agtkixkainaiofuhj4o3hunp3uvwl1y6" class="crayons-icon">
+                        <title id="agtkixkainaiofuhj4o3hunp3uvwl1y6">Search</title>
+                        <path
+                            d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0111 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 01-1.969 5.617zm-2.006-.742A6.977 6.977 0 0018 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 004.875-1.975l.15-.15z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="new__post d-none d-md-flex">
+                    <button type="button" class="btn btn-outline-primary">
+                        Create Post
+                    </button>
+                </div>
+                <div class="box__notifications d-flex align-items-center justify-content-center">
+                    <div class="counter__notification">
+                        <span class="counter__notification--number px-1">3</span>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
+                        aria-labelledby="a4gcjtvbhvh6eh4ee8qmpi1l37goznso" class="crayons-icon">
+                        <title id="a4gcjtvbhvh6eh4ee8qmpi1l37goznso">Notifications</title>
+                        <path d="M20 17h2v2H2v-2h2v-7a8 8 0 1116 0v7zm-2 0v-7a6 6 0 10-12 0v7h12zm-9 4h6v2H9v-2z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="avatar__circle">
+                    <div class="avatar__circle--container d-flex align-items-center">
+                        <img class="img__avatar" alt=""
+                            src="https://res.cloudinary.com/practicaldev/image/fetch/s--40Gyn8S9--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1100360/52db7e7f-94e7-4e8a-a773-afa2b3e3c113.jpeg" />
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
-    <!-- header zone end -->
-
-    <!-- container zone start -->
+    <!-- header zone end    *  Jesus Eng  -->
     <div class="container">
-        
-    </div>
-    <!-- container zone end -->
+        <div class="row">
+            <div class="col-1 d-none d-md-block bg-body-secondary align-items-center justify-content-around">
+                <div class="dropdown d-inline">
+                    <button class="dropbtn border border-0 bg-body-secondary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            role="img" aria-hidden="true" class="crayons-icon">
+                            <g clip-path="url(#clip0_988_3276)">
+                                <path
+                                    d="M19 14V17H22V19H18.999L19 22H17L16.999 19H14V17H17V14H19ZM20.243 4.75698C22.505 7.02498 22.583 10.637 20.479 12.992L19.059 11.574C20.39 10.05 20.32 7.65998 18.827 6.16998C17.324 4.67098 14.907 4.60698 13.337 6.01698L12.002 7.21498L10.666 6.01798C9.09103 4.60598 6.67503 4.66798 5.17203 6.17198C3.68203 7.66198 3.60703 10.047 4.98003 11.623L13.412 20.069L12 21.485L3.52003 12.993C1.41603 10.637 1.49503 7.01898 3.75603 4.75698C6.02103 2.49298 9.64403 2.41698 12 4.52898C14.349 2.41998 17.979 2.48998 20.242 4.75698H20.243Z"
+                                    fill="#444444"></path>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_988_3276">
+                                    <rect width="24" height="24" fill="white"></rect>
+                                </clipPath>
+                            </defs>
+                        </svg></svg>
+                        <span>117</span>
+                    </button>
 
-    <!-- footer zone start -->
-    <footer>
+                    <div class="dropdown-content flex-row position-absolute bg-white rounded-5 p-1">
+                        <button class="border border-white bg-white rounded-4 m-2" type="button"><img aria_hidden="true"
+                                height="32" width="32"
+                                src="https://dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg">59</button>
+                        <button class="border border-white bg-white rounded-4 m-2" type="button"><img aria_hidden="true"
+                                height="32" width="32"
+                                src="https://dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg">15</button>
+                        <button class="border border-white bg-white rounded-4 m-2" type="button"><img aria_hidden="true"
+                                height="32" width="32"
+                                src="https://dev.to/assets/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg">14</button>
+                        <button class="border border-white bg-white rounded-4 m-2" type="button"><img aria_hidden="true"
+                                height="32" width="32"
+                                src="https://dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg">13</button>
+                        <button class="border border-white bg-white rounded-4 m-2" type="button"><img aria_hidden="true"
+                                height="32" width="32"
+                                src="https://dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg">16</button>
+                    </div>
+                </div>
 
-    </footer>
-    <!-- footer zone end -->
+                <div class="mt-4 mb-4 ms-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
+                        aria-hidden="true" class="crayons-icon">
+                        <path
+                            d="M10 3h4a8 8 0 010 16v3.5c-5-2-12-5-12-11.5a8 8 0 018-8zm2 14h2a6 6 0 000-12h-4a6 6 0 00-6 6c0 3.61 2.462 5.966 8 8.48V17z"
+                            fill="#444444"></path>
+                    </svg>
+                    <span class="ms-1">24</span>
+                </div>
+
+                <div class="ms-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
+                        aria-hidden="true" class="crayons-icon">
+                        <path
+                            d="M5 2h14a1 1 0 011 1v19.143a.5.5 0 01-.766.424L12 18.03l-7.234 4.536A.5.5 0 014 22.143V3a1 1 0 011-1zm13 2H6v15.432l6-3.761 6 3.761V4z"
+                            fill="#444444"></path>
+                    </svg>
+                    <span>109</span>
+                </div>
+
+                <div class="dropdown">
+                    <a class="btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img"
+                            aria-labelledby="abbjlf69yzqchr4ml1tfl0nf47fkc6rh" aria-hidden="true"
+                            class="crayons-icon dropdown-icon">
+                            <title id="abbjlf69yzqchr4ml1tfl0nf47fkc6rh">More...</title>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M7 12a2 2 0 11-4 0 2 2 0 014 0zm7 0a2 2 0 11-4 0 2 2 0 014 0zm5 2a2 2 0 100-4 2 2 0 000 4z"
+                                fill="#444444"></path>
+                        </svg>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Copy link</a></li>
+                        <li><a class="dropdown-item" href="#">Share to Twiter</a></li>
+                        <li><a class="dropdown-item" href="#">Share to LinkedIn</a></li>
+                        <li><a class="dropdown-item" href="#">Share to Reddit</a></li>
+                        <li><a class="dropdown-item" href="#">Share to Hacker News</a></li>
+                        <li><a class="dropdown-item" href="#">Share to Facebook</a></li>
+                        <li><a class="dropdown-item" href="#">Share to Mastodon</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="col-lg-6 col-md-11 col-sm-12 bg-body-secondary">
+                <div class="bg-white rounded">
+                    <div class="col">
+                        <div class="car">
+                            <img class="col-sm-12"
+                                src="https://res.cloudinary.com/practicaldev/image/fetch/s--vxgL6_kd--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/eqqc86rml8sf31wd80y1.png"
+                                width="650" height="260" style="background-color:#dddddd;"
+                                alt="Cover image for Free Open-Source Portfolio Template for Developers⚡🚀">
+
+                            <div class="card-body">
+                                <div class="card mb-3 col-sm-12">
+                                    <div class="row g-0">
+                                        <div class="col-sm-1 m-3">
+                                            <img class="rounded-circle"
+                                                src="https://res.cloudinary.com/practicaldev/image/fetch/s--u6cIc5RL--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/765095/966f85b8-65f0-438f-be4c-0a5dc3d38418.png"
+                                                width="40" height="40" alt="Syed Mohsin Raza">
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <div class="card-body lh-1">
+                                                <p class="card-text text-body-secondary" style="font-weight: bold;">Syed
+                                                    Mohsin Raza</p>
+                                                <p class="card-text"><small class="text-body-secondary">Posted on 13
+                                                        jun</small></p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-12 container flex-row bg-white rounded-5 ps-1 mt-3 ps-4">
+                                            <button class="rounded-4 bg-white border border-white me-3"
+                                                type="button"><img aria_hidden="true" height="32" width="32"
+                                                    src="https://dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg">
+                                                59 </button>
+                                            <button class="rounded-4 bg-white border border-white me-3"
+                                                type="button"><img aria_hidden="true" height="32" width="32"
+                                                    src="https://dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg">
+                                                15 </button>
+                                            <button class="rounded-4 bg-white border border-white me-3"
+                                                type="button"><img aria_hidden="true" height="32" width="32"
+                                                    src="https://dev.to/assets/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg">
+                                                14 </button>
+                                            <button class="rounded-4 bg-white border border-white me-3"
+                                                type="button"><img aria_hidden="true" height="32" width="32"
+                                                    src="https://dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg">
+                                                13 </button>
+                                            <button class="rounded-4 bg-white border border-white me-3"
+                                                type="button"><img aria_hidden="true" height="32" width="32"
+                                                    src="https://dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg">
+                                                16 </button>
+                                        </div>
+                                        <div class="container fw-bolder mt-3 ms-3">
+                                            <h2 style="font-weight: bold;">Free Open-Source Portfolio Template for
+                                                Developers⚡🚀</h2>
+                                        </div>
+
+                                        <div class="container flex-row bg-white rounded-5 ps-1 mt-3 ps-4">
+                                            <button class="rounded-4 bg-white border border-white me-3"
+                                                type="button"><span
+                                                    style="color:rgb(80, 1, 80);">#</span>webdev</button>
+                                            <button class="rounded-4 bg-white border border-white me-3"
+                                                type="button"><span class="text-success">#</span>opensource</button>
+                                            <button class="rounded-4 bg-white border border-white me-3"
+                                                type="button"><span
+                                                    style="color: rgb(3, 3, 97);">#</span>career</button>
+                                            <button class="rounded-4 bg-white border border-white me-3"
+                                                type="button"><span class="text-warning">#</span>javascript</button>
+                                        </div>
+                                        <img class="ff-image mt-5 border border-none rounded-3 justify-content-center"
+                                            src="https://res.cloudinary.com/practicaldev/image/fetch/s--GY86uYfQ--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_800/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/2xm824o2glxdj6i5snim.gif"
+                                            alt="Portfolio template gif" loading="lazy" width="610" height="350"
+                                            data-animated="true" id="animated-0">
+
+                                        <p class="mt-1 ps-3">A beautiful, minimal and accessible portfolio template for
+                                            Developers ✨ which is completely free and Open Source. Anyone can use this
+                                            as a template for making their own portfolio and can customize it the way
+                                            they want.</p>
+                                        <p class="ps-3">Give it a star 🌟 on Github if you find it useful.</p>
+                                        <blockquote
+                                            class="blockquote ms-4 border border-start border-secondary-subtle border-4 border-top-0 border-bottom-0">
+                                            <p class="ms-3 lh-1">Github <a target="_blank"
+                                                    href="https://github.com/devsyedmohsin/portfolio-template">Repo Link
+                                                    →</a></p>
+                                            <p class="ms-3 lh-1">Check out the <a target="_blank"
+                                                    href="https://opensource-portfolio.netlify.app/">live demo here
+                                                    →</a></p>
+                                        </blockquote>
+                                        <h1 class="ps-3" style="font-weight: bold;">Useful resources</h1>
+                                        <p class="ps-3">Make sure to subscribe to our <a target="_blank"
+                                                href="https://www.youtube.com/@nisarhassan12">youtube channel</a>
+                                            channel where we cover creating templates like this from scratch using HTML,
+                                            CSS and JavaScript and also don't forget to star 🌟 the <a target="_blank"
+                                                href="https://github.com/devsyedmohsin/css-tips-tricks">css-tips-tricks</a>
+                                            repository that has already reached 150+ stars.</p>
+                                        <h1 class="ps-3" style="font-weight: bold;">Features</h1>
+                                        <ul class="ps-5">
+                                            <li>Clean, Simple and Modern UI Design ✨.</li>
+                                            <li>Uses No CSS or JavaScript Frameworks or libraries as dependencies.</li>
+                                            <li>Built with only HTML, CSS and JavaScript 🔨.</li>
+                                            <li>Supports light/dark theme.</li>
+                                            <li>Well Organized Documentation.</li>
+                                            <li>Built with a11y in mind ♿.</li>
+                                            <li>Fully Responsive.</li>
+                                            <li>Sleek animations.</li>
+                                            <li>SEO-optimized.</li>
+                                            <li>Loads fast ⚡.</li>
+                                        </ul>
+
+                                        <h1 class="ps-3" style="font-weight: bold;">Lighthouse report</h1>
+                                        <img class="border border-none rounded-3 justify-content-center"
+                                            src="https://res.cloudinary.com/practicaldev/image/fetch/s--RWzT4ZA8--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_800/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/4q0s69vzmyh5vxxo4erm.png"
+                                            alt="lighthouse report with 100 result" loading="lazy" width="610"
+                                            height="330">
+                                        <p class="ps-3" class="mt-3"><span style="font-weight: bold;">You can support me
+                                                by following on <a target="_blank"
+                                                    href="https://github.com/devsyedmohsin">GitHub.</a></span> If you
+                                            have have something to say or have any question feel free to drop a comment
+                                            below.</p>
+
+
+                                        <div class="container">
+                                            <div class="row">
+                                                <h5 class="col-sm-5" style="font-weight: bold;">Top comments (20)</h5>
+
+                                                <div class="col-sm-2 dropdown">
+                                                    <button class="btn btn-white" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" aria-hidden="true">
+                                                            <path
+                                                                d="M12 18l-4-3.771 1-.943 3 2.829 3-2.829 1 .943L12 18zm0-10.115l-3 2.829-1-.943L12 6l4 3.771-1 .942-3-2.828z">
+                                                            </path>
+                                                        </svg>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#">Sort discussion:</a></li>
+                                                        <li><a class="dropdown-item" href="#">Top</a></li>
+                                                        <li><a class="dropdown-item" href="#">Latest</a></li>
+                                                        <li><a class="dropdown-item" href="#">Oldest</a></li>
+                                                    </ul>
+                                                </div>
+                                                <button type="button"
+                                                    class="col-sm-5 btn btn-outline-secondary text-secondary d-flex justify-content-end ms-5"
+                                                    style="max-height: 35px; max-width: 100px; font-weight: bold;">Subscribe</button>
+                                            </div>
+
+                                            <div class="row mt-2 d-flex justify-content-between">
+                                                <div class="col-sm-1">
+                                                    <img class="rounded-circle border border-secondary ms-2"
+                                                        id="comment-primary-user-profile--avatar"
+                                                        src="https://res.cloudinary.com/practicaldev/image/fetch/s--lZnFY2ou--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1100972/754a279e-908a-4490-bca1-debb23e1414a.png"
+                                                        width="32" height="32" alt="pic" loading="lazy">
+                                                </div>
+                                                <div class="col-sm-10 ms-4">
+                                                    <textarea class="form-control" placeholder="Add to the discussion"
+                                                        id="floatingTextarea"></textarea>
+                                                </div>
+                                            </div>
+
+                                            <div class="mt-3 pb-3 border-white" style="max-width: 580px;">
+                                                <div class="row ">
+                                                    <div class="col-sm-1">
+                                                        <img class="crayons-avatar__image rounded-circle border border-danger ms-2 mt-3"
+                                                            width="32" height="32"
+                                                            src="https://res.cloudinary.com/practicaldev/image/fetch/s--IG75bHWr--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1001791/84055eaf-8e23-40cb-81c2-a630775974f9.png"
+                                                            alt="harrysingh0071 profile image" loading="lazy">
+                                                        <a class="btn" href="#" role="button" data-bs-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" viewBox="0 0 24 24" aria-hidden="true"
+                                                                class="mt-2">
+                                                                <title>Crown</title>
+                                                                <path
+                                                                    d="M12 18l-4-3.771 1-.943 3 2.829 3-2.829 1 .943L12 18zm0-10.115l-3 2.829-1-.943L12 6l4 3.771-1 .942-3-2.828z">
+                                                                </path>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-sm-11">
+                                                        <div class="card-body border border-light-subtle rounded">
+                                                            <p class="text-body-secondary">HarrySingh0071 • 13 jun</p>
+                                                            <p>Well done! Pretty decent template Bro.</p>
+                                                        </div>
+                                                        <div class="card-footer">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" role="img"
+                                                                aria-labelledby="a9m5gd4oyeicdqa0i77tzwf7sg6r8bgv"
+                                                                class="crayons-icon reaction-icon not-reacted">
+                                                                <title id="a9m5gd4oyeicdqa0i77tzwf7sg6r8bgv">Like
+                                                                    comment: </title>
+                                                                <path
+                                                                    d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z">
+                                                                </path>
+                                                            </svg>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" role="img"
+                                                                aria-labelledby="aqdppj5dp2bi32mj7vraqe0l3qvwu0ou"
+                                                                class="crayons-icon reaction-icon not-reacted">
+                                                                <title id="aqdppj5dp2bi32mj7vraqe0l3qvwu0ou">Comment
+                                                                    button</title>
+                                                                <path
+                                                                    d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
+                                                                </path>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="pb-3 border-white" style="max-width: 580px;">
+                                                <div class="row ">
+                                                    <div class="col-sm-1">
+                                                        <img class="rounded-circle border border-dark ms-2 mt-3"
+                                                            width="32" height="32"
+                                                            src="https://res.cloudinary.com/practicaldev/image/fetch/s--vl4CO8kJ--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/245175/43d9e040-6762-4abe-bfb3-c7a1f91ac0a1.jpeg"
+                                                            alt="nisarhassan12 profile image" loading="lazy">
+                                                        <a class="btn" href="#" role="button" data-bs-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" viewBox="0 0 24 24" aria-hidden="true"
+                                                                class="mt-2">
+                                                                <title>Crown</title>
+                                                                <path
+                                                                    d="M12 18l-4-3.771 1-.943 3 2.829 3-2.829 1 .943L12 18zm0-10.115l-3 2.829-1-.943L12 6l4 3.771-1 .942-3-2.828z">
+                                                                </path>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-sm-11">
+                                                        <div class="card-body border border-light-subtle rounded">
+                                                            <p class="text-body-secondary">Nisar Hassan Naqvi • 13 jun •
+                                                                Edited</p>
+                                                            <p>Great template pretty slick and rad design ✨</p>
+                                                        </div>
+                                                        <div class="card-footer">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" role="img"
+                                                                aria-labelledby="a9m5gd4oyeicdqa0i77tzwf7sg6r8bgv"
+                                                                class="crayons-icon reaction-icon not-reacted">
+                                                                <title id="a9m5gd4oyeicdqa0i77tzwf7sg6r8bgv">Like
+                                                                    comment: </title>
+                                                                <path
+                                                                    d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z">
+                                                                </path>
+                                                            </svg>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" role="img"
+                                                                aria-labelledby="aqdppj5dp2bi32mj7vraqe0l3qvwu0ou"
+                                                                class="crayons-icon reaction-icon not-reacted">
+                                                                <title id="aqdppj5dp2bi32mj7vraqe0l3qvwu0ou">Comment
+                                                                    button</title>
+                                                                <path
+                                                                    d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
+                                                                </path>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="ms-5 border-white" style="max-width: 530px;">
+                                                <div class="row ">
+                                                    <div class="col-sm-1">
+                                                        <img class="crayons-avatar__image rounded-circle border border-danger ms-2 mt-3"
+                                                            width="32" height="32"
+                                                            src="https://res.cloudinary.com/practicaldev/image/fetch/s--IG75bHWr--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1001791/84055eaf-8e23-40cb-81c2-a630775974f9.png"
+                                                            alt="harrysingh0071 profile image" loading="lazy">
+                                                        <a class="btn" href="#" role="button" data-bs-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" viewBox="0 0 24 24" aria-hidden="true"
+                                                                class="mt-2">
+                                                                <title>Crown</title>
+                                                                <path
+                                                                    d="M12 18l-4-3.771 1-.943 3 2.829 3-2.829 1 .943L12 18zm0-10.115l-3 2.829-1-.943L12 6l4 3.771-1 .942-3-2.828z">
+                                                                </path>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-sm-11">
+                                                        <div class="card-body border border-light-subtle rounded ms-2">
+                                                            <p class="text-body-secondary">HarrySingh0071 • 13 jun</p>
+                                                            <p>absolutely.</p>
+                                                        </div>
+                                                        <div class="card-footer">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" role="img"
+                                                                aria-labelledby="a9m5gd4oyeicdqa0i77tzwf7sg6r8bgv"
+                                                                class="crayons-icon reaction-icon not-reacted">
+                                                                <title id="a9m5gd4oyeicdqa0i77tzwf7sg6r8bgv">Like
+                                                                    comment: </title>
+                                                                <path
+                                                                    d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z">
+                                                                </path>
+                                                            </svg>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" role="img"
+                                                                aria-labelledby="aqdppj5dp2bi32mj7vraqe0l3qvwu0ou"
+                                                                class="crayons-icon reaction-icon not-reacted">
+                                                                <title id="aqdppj5dp2bi32mj7vraqe0l3qvwu0ou">Comment
+                                                                    button</title>
+                                                                <path
+                                                                    d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
+                                                                </path>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="pb-3 border-white" style="max-width: 580px;">
+                                                <div class="row ">
+                                                    <div class="col-sm-1">
+                                                        <img class="rounded-circle border border-secondary ms-2 mt-3"
+                                                            width="32" height="32"
+                                                            src="https://res.cloudinary.com/practicaldev/image/fetch/s--cbpQSjkh--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/886254/b39c43ca-93ca-4acc-8bb3-a77364899a28.png"
+                                                            alt="malikhaziq profile image" loading="lazy">
+                                                        <a class="btn" href="#" role="button" data-bs-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" viewBox="0 0 24 24" aria-hidden="true"
+                                                                class="mt-2">
+                                                                <title>Crown</title>
+                                                                <path
+                                                                    d="M12 18l-4-3.771 1-.943 3 2.829 3-2.829 1 .943L12 18zm0-10.115l-3 2.829-1-.943L12 6l4 3.771-1 .942-3-2.828z">
+                                                                </path>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-sm-11">
+                                                        <div class="card-body border border-light-subtle rounded">
+                                                            <p class="text-body-secondary">Malik-haziq • 13 jun</p>
+                                                            <p>Beautiful Design.</p>
+                                                        </div>
+                                                        <div class="card-footer">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" role="img"
+                                                                aria-labelledby="a9m5gd4oyeicdqa0i77tzwf7sg6r8bgv"
+                                                                class="crayons-icon reaction-icon not-reacted">
+                                                                <title id="a9m5gd4oyeicdqa0i77tzwf7sg6r8bgv">Like
+                                                                    comment: </title>
+                                                                <path
+                                                                    d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z">
+                                                                </path>
+                                                            </svg>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" role="img"
+                                                                aria-labelledby="aqdppj5dp2bi32mj7vraqe0l3qvwu0ou"
+                                                                class="crayons-icon reaction-icon not-reacted">
+                                                                <title id="aqdppj5dp2bi32mj7vraqe0l3qvwu0ou">Comment
+                                                                    button</title>
+                                                                <path
+                                                                    d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
+                                                                </path>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="bg-white rounded mt-3 p-3">
+                    <p>DEV Community</p>
+                    <h4 style="font-weight: bold;">Trending in Career</h4>
+                    <p>In the Career community, recent discussions include the <span style="font-weight: bold;">benefits
+                            of blogging</span> for software developers, the differences between <span
+                            style="font-weight: bold;">Engineering Manager</span> and <span
+                            style="font-weight: bold;">Tech Lead</span> roles, and the ongoing debate about <span
+                            style="font-weight: bold;">remote work.</span> Additionally, members share experiences with
+                        burnout vs job dissatisfaction and common <span style="font-weight: bold;">engineering
+                            mistakes</span> that can harm startups.</p>
+
+                    <a class="text-decoration-none" target="_blank"
+                        href="https://dev.to/alexhyettdev/should-you-be-blogging-as-a-software-developer-593a">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-sm-1 m-3">
+                                    <img class="rounded-circle"
+                                        src="https://res.cloudinary.com/practicaldev/image/fetch/s--2xlAqOkU--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_775/https://res.cloudinary.com/practicaldev/image/fetch/s--OKKB_yfC--/c_fill%2Cf_auto%2Cfl_progressive%2Ch_150%2Cq_auto%2Cw_150/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/491468/6c672f1b-6587-4277-9b75-d33a1515a249.jpeg"
+                                        alt="alexhyettdev" width="60" height="60" loading="lazy">
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="card-body lh-1">
+                                        <h5 class="card-title fs-4" style="font-weight: bold;">Should you be blogging as
+                                            a software developer?</h5>
+                                        <p class="card-text text-body-secondary">Alex Hyett • May 26 • 10 min read</p>
+                                        <p class="card-text"><small class="text-secondary">#blogging #career #beginners
+                                                #learning</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="text-decoration-none" target="_blank"
+                        href="https://dev.to/alexhyettdev/engineering-manager-vs-tech-lead-hbm">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-sm-1 m-3">
+                                    <img class="rounded-circle"
+                                        src="https://res.cloudinary.com/practicaldev/image/fetch/s--2xlAqOkU--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_775/https://res.cloudinary.com/practicaldev/image/fetch/s--OKKB_yfC--/c_fill%2Cf_auto%2Cfl_progressive%2Ch_150%2Cq_auto%2Cw_150/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/491468/6c672f1b-6587-4277-9b75-d33a1515a249.jpeg"
+                                        alt="alexhyettdev" width="60" height="60" loading="lazy">
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="card-body lh-1">
+                                        <h5 class="card-title fs-4" style="font-weight: bold;">Engineering Manager vs
+                                            Tech Lead 🧑🏻‍💻</h5>
+                                        <p class="card-text text-body-secondary">Alex Hyett • May 28 • 7 min read</p>
+                                        <p class="card-text"><small class="text-secondary">#career #motivation
+                                                #beginners #developer</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="text-decoration-none" target="_blank"
+                        href="https://dev.to/jarrodhroberson/the-only-two-questions-you-need-to-ask-to-determine-if-someone-really-knows-something-693">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-sm-1 m-3">
+                                    <img class="rounded-circle"
+                                        src="https://res.cloudinary.com/practicaldev/image/fetch/s--dnhwQ7KE--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_775/https://res.cloudinary.com/practicaldev/image/fetch/s--BI71wroh--/c_fill%2Cf_auto%2Cfl_progressive%2Ch_150%2Cq_auto%2Cw_150/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/225638/0a7f0ff7-19b7-4364-b250-d49e9654c6a4.jpeg"
+                                        alt="jarrodhroberson" width="60" height="60" loading="lazy">
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="card-body lh-1">
+                                        <h5 class="card-title fs-4" style="font-weight: bold;">The only two questions
+                                            you need to ask to determine if someone really "knows" something.</h5>
+                                        <p class="card-text text-body-secondary">Jarrod Roberson • Jun 4 • 5 min read
+                                        </p>
+                                        <p class="card-text"><small class="text-secondary">#career #beginners</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="text-decoration-none" target="_blank"
+                        href="https://dev.to/_michaellin/3-engineering-mistakes-that-kill-startups-3fm3">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-sm-1 m-3">
+                                    <img class="rounded-circle"
+                                        src="https://res.cloudinary.com/practicaldev/image/fetch/s--l-9pcYJe--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_775/https://res.cloudinary.com/practicaldev/image/fetch/s--j_Tv6AyL--/c_fill%2Cf_auto%2Cfl_progressive%2Ch_150%2Cq_auto%2Cw_150/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1010892/81fb495f-5a6d-4ed3-a61f-8993a237072e.jpg"
+                                        alt="_michaellin" width="60" height="60" loading="lazy">
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="card-body lh-1">
+                                        <h5 class="card-title fs-4" style="font-weight: bold;">3 Engineering Mistakes
+                                            That Kill Startups</h5>
+                                        <p class="card-text text-body-secondary">Js for ZenStack • Jun 2 • 5 min read
+                                        </p>
+                                        <p class="card-text"><small class="text-secondary">#webdev #discuss
+                                                #productivity #career</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="text-decoration-none" target="_blank"
+                        href="https://dev.to/bytehide/c-asyncawait-interview-questions-and-answers-f7l">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-sm-1 m-3">
+                                    <img class="rounded-circle"
+                                        src="https://res.cloudinary.com/practicaldev/image/fetch/s--v4JZX860--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_775/https://res.cloudinary.com/practicaldev/image/fetch/s--PKPeVe1_--/c_fill%2Cf_auto%2Cfl_progressive%2Ch_150%2Cq_auto%2Cw_150/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/358418/eedffc86-c021-4872-bac3-8093d7372a55.png"
+                                        alt="bytehide" width="60" height="60" loading="lazy">
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="card-body lh-1">
+                                        <h5 class="card-title fs-4" style="font-weight: bold;">C# Async/Await Interview
+                                            Questions And Answers</h5>
+                                        <p class="card-text text-body-secondary">ByteHide • Jun 8 • 22 min read</p>
+                                        <p class="card-text"><small class="text-secondary">#csharp #dotnet #programming
+                                                #career</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
 
 
 
-    <!-- script para que funcione bootsrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+                <ul
+                    class=" d-md-none nav justify-content-around sticky-bottom bg-white rounded-top d-flex align-items-center">
+                    <div class="dropdown ">
+
+                        <li>
+                            <button class="dropbtn border border-white bg-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" role="img" aria-hidden="true" class="crayons-icon">
+                                    <g clip-path="url(#clip0_988_3276)">
+                                        <path
+                                            d="M19 14V17H22V19H18.999L19 22H17L16.999 19H14V17H17V14H19ZM20.243 4.75698C22.505 7.02498 22.583 10.637 20.479 12.992L19.059 11.574C20.39 10.05 20.32 7.65998 18.827 6.16998C17.324 4.67098 14.907 4.60698 13.337 6.01698L12.002 7.21498L10.666 6.01798C9.09103 4.60598 6.67503 4.66798 5.17203 6.17198C3.68203 7.66198 3.60703 10.047 4.98003 11.623L13.412 20.069L12 21.485L3.52003 12.993C1.41603 10.637 1.49503 7.01898 3.75603 4.75698C6.02103 2.49298 9.64403 2.41698 12 4.52898C14.349 2.41998 17.979 2.48998 20.242 4.75698H20.243Z"
+                                            fill="#444444"></path>
+                                    </g>
+                                </svg>
+                                <span class="text-secondary">117</span>
+                            </button>
+                            <div
+                                class="dropdown-content flex-row position-absolute bottom-4 bg-white rounded-4 p-1 pt-2 shadow p-2 mb-5 bg-body-tertiary rounded">
+                                <button class="border border-white bg-white rounded-4 m-2" type="button"><img
+                                        aria_hidden="true" height="32" width="32"
+                                        src="https://dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg">59</button>
+                                <button class="border border-white bg-white rounded-4 m-2" type="button"><img
+                                        aria_hidden="true" height="32" width="32"
+                                        src="https://dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg">15</button>
+                                <button class="border border-white bg-white rounded-4 m-2" type="button"><img
+                                        aria_hidden="true" height="32" width="32"
+                                        src="https://dev.to/assets/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg">14</button>
+                                <button class="border border-white bg-white rounded-4 m-2" type="button"><img
+                                        aria_hidden="true" height="32" width="32"
+                                        src="https://dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg">13</button>
+                                <button class="border border-white bg-white rounded-4 m-2" type="button"><img
+                                        aria_hidden="true" height="32" width="32"
+                                        src="https://dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg">16</button>
+                            </div>
+                        </li>
+                    </div>
+
+
+
+                    <li class="nav-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
+                            aria-hidden="true" class="crayons-icon">
+                            <path
+                                d="M10 3h4a8 8 0 010 16v3.5c-5-2-12-5-12-11.5a8 8 0 018-8zm2 14h2a6 6 0 000-12h-4a6 6 0 00-6 6c0 3.61 2.462 5.966 8 8.48V17z"
+                                fill="#444444"></path>
+                        </svg>
+                        <span class="text-secondary">24</span>
+                    </li>
+
+                    <li class="nav-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
+                            aria-hidden="true" class="crayons-icon">
+                            <path
+                                d="M5 2h14a1 1 0 011 1v19.143a.5.5 0 01-.766.424L12 18.03l-7.234 4.536A.5.5 0 014 22.143V3a1 1 0 011-1zm13 2H6v15.432l6-3.761 6 3.761V4z"
+                                fill="#444444"></path>
+                        </svg>
+                        <span class="text-secondary">109</span>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="btn mb-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img"
+                                aria-labelledby="abbjlf69yzqchr4ml1tfl0nf47fkc6rh" aria-hidden="true"
+                                class="crayons-icon dropdown-icon">
+                                <title id="abbjlf69yzqchr4ml1tfl0nf47fkc6rh">More...</title>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M7 12a2 2 0 11-4 0 2 2 0 014 0zm7 0a2 2 0 11-4 0 2 2 0 014 0zm5 2a2 2 0 100-4 2 2 0 000 4z"
+                                    fill="#444444"></path>
+                            </svg>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Copy link</a></li>
+                            <li><a class="dropdown-item" href="#">Share to Twiter</a></li>
+                            <li><a class="dropdown-item" href="#">Share to LinkedIn</a></li>
+                            <li><a class="dropdown-item" href="#">Share to Reddit</a></li>
+                            <li><a class="dropdown-item" href="#">Share to Hacker News</a></li>
+                            <li><a class="dropdown-item" href="#">Share to Facebook</a></li>
+                            <li><a class="dropdown-item" href="#">Share to Mastodon</a></li>
+                            <li><a class="dropdown-item" href="#">Share Post via...</a></li>
+                            <li><a class="dropdown-item" href="#">Report Abuse</a></li>
+                    </li>
+                </ul>
+
+            </div>
+
+
+            <aside class="col-12 col-md-3">
+                <div class="crayons-card branded-7 p-4 pt-0 gap-4 grid" style="border-top-color: #e0e0e0;">
+                    <div class="-mt-4">
+                        <a href="/devsyedmohsin" class="flex">
+                            <span class="crayons-avatar crayons-avatar--xl  mr-2 shrink-0">
+                                <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--T_fohCG7--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/765095/966f85b8-65f0-438f-be4c-0a5dc3d38418.png"
+                                    class="crayons-avatar__image" alt="" loading="lazy">
+                            </span>
+                            <span class="mt-5 black-text">Syed Mohsin Raza</span>
+                        </a>
+                    </div>
+
+                    <div class="print-hidden">
+                        <button name="button" type="button"
+                            data-info="{&quot;className&quot;:&quot;User&quot;,&quot;style&quot;:&quot;&quot;,&quot;id&quot;:765095,&quot;name&quot;:&quot;Syed Mohsin Raza&quot;}"
+                            class="crayons-btn follow-action-button whitespace-nowrap w-100 follow-user showing"
+                            aria-label="Follow user: Syed Mohsin Raza" aria-pressed="false" data-fetched="fetched"
+                            data-verb="unfollow">Follow</button>
+                    </div>
+                    <div class="color-base-70">
+                        Frontend Software Engineer &amp; Interface Designer
+                    </div>
+
+                    <div class="user-metadata-details">
+                        <ul class="user-metadata-details-inner">
+                            <li>
+                                <div class="key">
+                                    Location
+                                </div>
+                                <div class="value">
+                                    Lahore, Pakistan
+                                </div>
+                            </li>
+                            <li>
+                                <div class="key">
+                                    Joined
+                                </div>
+                                <div class="value">
+                                    <time datetime="2021-11-30T12:43:25Z" class="date">30 nov 2021</time>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </aside>
+
+        </div>
+
+        <!-- footer zone start -->
+        <footer
+            class="footer container-fluid d-flex  flex-column align-items-center justify-content-center text-center p-5 ">
+
+            <p class="footer_paragraph m-1">
+                <a href="#" class="footer__link fw-medium text-decoration-none" aria-label="DEV Community Home">DEV
+                    Community</a>
+                — A constructive and inclusive social network for software developers. With you every step of your
+                journey.
+            </p>
+
+            <ul class="footer__nav-links d-flex flex-wrap text-center justify-content-center gap-4 m-1 ">
+
+                <li class="footer__nav-link ">
+                    <a href="#" class="text-decoration-none">Home</a>
+                </li>
+
+                <li class="footer__nav-link  ">
+                    <a href="#" class="text-decoration-none">Listings</a>
+                </li>
+
+                <li class="footer__nav-link  ">
+                    <a href="#" class="text-decoration-none">Podcasts</a>
+                </li>
+
+                <li class="footer__nav-link   ">
+                    <a href="#" class="text-decoration-none">Videos</a>
+                </li>
+
+                <li class="footer__nav-link ">
+                    <a href="#" class="text-decoration-none">Tags</a>
+                </li>
+
+                <li class="footer__nav-link ">
+                    <a href="#" class="text-decoration-none">FAQ</a>
+                </li>
+
+                <li class="footer__nav-link ">
+                    <a href="#" class="text-decoration-none">Forem Shop</a>
+                </li>
+
+                <li class="footer__nav-link  ">
+                    <a href="#" class="text-decoration-none">Sponsors</a>
+                </li>
+
+                <li class="footer__nav-link  ">
+                    <a href="#" class="text-decoration-none">About</a>
+                </li>
+
+                <li class="footer__nav-link  ">
+                    <a href="#" class="text-decoration-none">Contact</a>
+                </li>
+
+                <li class="footer__nav-link  ">
+                    <a href="#" class="text-decoration-none">Guides</a>
+                </li>
+
+                <li class="footer__nav-link  ">
+                    <a href="#" class="text-decoration-none">Software comparisons</a>
+                </li>
+            </ul>
+
+
+
+            <ul
+                class="footer__nav-links d-flex flex-row gap-4 flex-wrap text-center align-items-center justify-content-center m-1">
+
+                <li class="footer__nav-link">
+                    <a href="#" class="text-decoration-none">Code of Conduct</a>
+                </li>
+
+                <li class="footer__nav-link">
+                    <a href="#" class="text-decoration-none">Privacy Policy</a>
+                </li>
+
+                <li class="footer__nav-link">
+                    <a href="#" class="text-decoration-none">Terms of use</a>
+                </li>
+
+            </ul>
+
+            <p class="m-0">Built on
+                <a href="#" class="text-decoration-none">Forem</a> — the
+                <a href="#" class="text-decoration-none">open source</a> software that powers
+                <a href="#" class="text-decoration-none">DEV</a> and other inclusive communities.
+            </p>
+
+            <p> Made with love and
+                <a href="#" class="text-decoration-none">Ruby on Rails</a>. Dev Community
+                <span title"copyright">©️</span> 2016 - 2023.
+            </p>
+
+        </footer>
+        <!-- footer zone end -->
+
+
+
+        <!-- script para que funcione bootsrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
 </body>
+
 </html>
